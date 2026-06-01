@@ -134,7 +134,7 @@ return [
     */
 
     'usermenu_enabled' => true,
-    'usermenu_header' => false,
+    'usermenu_header' => true,
     'usermenu_header_class' => 'bg-primary',
     'usermenu_image' => false,
     'usermenu_desc' => false,
@@ -298,100 +298,206 @@ return [
     |
     */
 
+    // 'menu' => [
+    //     // Navbar items:
+    //     [
+    //         'type' => 'navbar-search',
+    //         'text' => 'search',
+    //         'topnav_right' => true,
+    //     ],
+    //     [
+    //         'type' => 'fullscreen-widget',
+    //         'topnav_right' => true,
+    //     ],
+
+    //     // Sidebar items:
+    //     [
+    //         'type' => 'sidebar-menu-search',
+    //         'text' => 'search',
+    //     ],
+    //     [
+    //         'text' => 'blog',
+    //         'url' => 'admin/blog',
+    //         'can' => 'manage-blog',
+    //     ],
+    //     [
+    //         'text' => 'pages',
+    //         'url' => 'admin/pages',
+    //         'icon' => 'far fa-fw fa-file',
+    //         'label' => 4,
+    //         'label_color' => 'success',
+    //     ],
+    //     ['header' => 'account_settings'],
+    //     [
+    //         'text' => 'profile',
+    //         'url' => 'admin/settings',
+    //         'icon' => 'fas fa-fw fa-user',
+    //     ],
+    //     [
+    //         'text' => 'change_password',
+    //         'url' => 'admin/settings',
+    //         'icon' => 'fas fa-fw fa-lock',
+    //     ],
+    //     [
+    //         'text' => 'multilevel',
+    //         'icon' => 'fas fa-fw fa-share',
+    //         'submenu' => [
+    //             [
+    //                 'text' => 'level_one',
+    //                 'url' => '#',
+    //             ],
+    //             [
+    //                 'text' => 'level_one',
+    //                 'url' => '#',
+    //                 'submenu' => [
+    //                     [
+    //                         'text' => 'level_two',
+    //                         'url' => '#',
+    //                     ],
+    //                     [
+    //                         'text' => 'level_two',
+    //                         'url' => '#',
+    //                         'submenu' => [
+    //                             [
+    //                                 'text' => 'level_three',
+    //                                 'url' => '#',
+    //                             ],
+    //                             [
+    //                                 'text' => 'level_three',
+    //                                 'url' => '#',
+    //                             ],
+    //                         ],
+    //                     ],
+    //                 ],
+    //             ],
+    //             [
+    //                 'text' => 'level_one',
+    //                 'url' => '#',
+    //             ],
+    //         ],
+    //     ],
+    //     ['header' => 'labels'],
+    //     [
+    //         'text' => 'important',
+    //         'icon_color' => 'red',
+    //         'url' => '#',
+    //     ],
+    //     [
+    //         'text' => 'warning',
+    //         'icon_color' => 'yellow',
+    //         'url' => '#',
+    //     ],
+    //     [
+    //         'text' => 'information',
+    //         'icon_color' => 'cyan',
+    //         'url' => '#',
+    //     ],
+    // ],
+
     'menu' => [
-        // Navbar items:
+
         [
-            'type' => 'navbar-search',
-            'text' => 'search',
-            'topnav_right' => true,
-        ],
-        [
-            'type' => 'fullscreen-widget',
-            'topnav_right' => true,
+            'text' => 'Dashboard',
+            'url'  => 'dashboard',
+            'icon' => 'fas fa-fw fa-tachometer-alt',
         ],
 
-        // Sidebar items:
         [
-            'type' => 'sidebar-menu-search',
-            'text' => 'search',
+            'header' => 'MASTER MANAGEMENT',
         ],
+
         [
-            'text' => 'blog',
-            'url' => 'admin/blog',
-            'can' => 'manage-blog',
+            'text' => 'Role Management',
+            'url'  => '#',
+            'icon' => 'fas fa-user-shield',
         ],
+
         [
-            'text' => 'pages',
-            'url' => 'admin/pages',
-            'icon' => 'far fa-fw fa-file',
-            'label' => 4,
-            'label_color' => 'success',
+            'text' => 'User Management',
+            'url'  => '#',
+            'icon' => 'fas fa-users',
         ],
-        ['header' => 'account_settings'],
+
         [
-            'text' => 'profile',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-user',
+            'text' => 'HSN Management',
+            'url'  => '#',
+            'icon' => 'fas fa-file-invoice',
         ],
+
         [
-            'text' => 'change_password',
-            'url' => 'admin/settings',
-            'icon' => 'fas fa-fw fa-lock',
+            'text' => 'Category Management',
+            'url'  => '#',
+            'icon' => 'fas fa-tags',
         ],
+
         [
-            'text' => 'multilevel',
-            'icon' => 'fas fa-fw fa-share',
-            'submenu' => [
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                    'submenu' => [
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                        ],
-                        [
-                            'text' => 'level_two',
-                            'url' => '#',
-                            'submenu' => [
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                                [
-                                    'text' => 'level_three',
-                                    'url' => '#',
-                                ],
-                            ],
-                        ],
-                    ],
-                ],
-                [
-                    'text' => 'level_one',
-                    'url' => '#',
-                ],
-            ],
+            'text' => 'Product Management',
+            'url'  => '#',
+            'icon' => 'fas fa-box',
         ],
-        ['header' => 'labels'],
+
         [
-            'text' => 'important',
-            'icon_color' => 'red',
-            'url' => '#',
+            'text' => 'SKU Management',
+            'url'  => '#',
+            'icon' => 'fas fa-barcode',
         ],
+
         [
-            'text' => 'warning',
-            'icon_color' => 'yellow',
-            'url' => '#',
+            'header' => 'BUSINESS OPERATIONS',
         ],
+
         [
-            'text' => 'information',
-            'icon_color' => 'cyan',
-            'url' => '#',
+            'text' => 'Supplier Management',
+            'url'  => '#',
+            'icon' => 'fas fa-truck',
         ],
+
+        [
+            'text' => 'Customer Management',
+            'url'  => '#',
+            'icon' => 'fas fa-user-friends',
+        ],
+
+        [
+            'text' => 'Warehouse Management',
+            'url'  => '#',
+            'icon' => 'fas fa-warehouse',
+        ],
+
+        [
+            'header' => 'INVENTORY',
+        ],
+
+        [
+            'text' => 'Purchase Orders',
+            'url'  => '#',
+            'icon' => 'fas fa-shopping-cart',
+        ],
+
+        [
+            'text' => 'Sales Orders',
+            'url'  => '#',
+            'icon' => 'fas fa-cash-register',
+        ],
+
+        [
+            'text' => 'Inventory Stock',
+            'url'  => '#',
+            'icon' => 'fas fa-boxes',
+        ],
+
+        [
+            'text' => 'Inventory Transactions',
+            'url'  => '#',
+            'icon' => 'fas fa-exchange-alt',
+        ],
+
+        [
+            'text' => 'Stock Adjustments',
+            'url'  => '#',
+            'icon' => 'fas fa-sliders-h',
+        ],
+
     ],
 
     /*
