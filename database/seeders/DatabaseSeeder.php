@@ -30,5 +30,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             WarehouseSeeder::class
         ]);
+
+        $this->call([
+            AssignSuperAdminSeeder::class
+        ]);
     }
 }
