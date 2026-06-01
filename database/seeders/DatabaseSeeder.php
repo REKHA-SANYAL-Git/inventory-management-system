@@ -22,5 +22,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             RoleMasterSeeder::class
         ]);
+
+        $this->call([
+            HsnMasterSeeder::class
+        ]);
     }
 }

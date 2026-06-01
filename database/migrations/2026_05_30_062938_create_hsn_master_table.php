@@ -17,6 +17,8 @@ return new class extends Migration
             $table->string('hsn_code', 20);
             $table->text('hsn_description');
 
+            $table->decimal('gst_rate', 5, 2)->nullable();
+
             $table->date('effective_date')->nullable();
 
             $table->boolean('status')->default(1);

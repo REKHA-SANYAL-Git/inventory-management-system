@@ -16,6 +16,7 @@ class Hsn extends Model
     protected $fillable = [
         'hsn_code',
         'hsn_description',
+        'gst_rate',
         'effective_date',
         'status'
     ];
