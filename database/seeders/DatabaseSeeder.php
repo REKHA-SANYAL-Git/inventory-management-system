@@ -26,5 +26,9 @@ class DatabaseSeeder extends Seeder
         $this->call([
             HsnMasterSeeder::class
         ]);
+
+        $this->call([
+            WarehouseSeeder::class
+        ]);
     }
 }
